@@ -1,0 +1,14 @@
+[
+  {
+    "id": "f2509147-0fa8-4ae2-968d-22befa9de482",
+    "timestamp": "2025-01-16T11:26:01.145Z",
+    "topic": "powersuply",
+    "payload": "5"
+  },
+  {
+    "id": "b9f5204c-9eb3-45c1-a223-b2e0ac83bde1",
+    "timestamp": "2025-01-16T12:16:37.560Z",
+    "topic": "powersuply",
+    "payload": "1"
+  }
+]

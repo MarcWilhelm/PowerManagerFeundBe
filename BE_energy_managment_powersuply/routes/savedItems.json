@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Marc Laptop",
+    "HighesValue": 125,
+    "lowestValue": 80
+  },
+  {
+    "label": "Marc Smartphone",
+    "HighesValue": 125,
+    "lowestValue": 80
+  },
+  {
+    "label": "Livio Laptop",
+    "HighesValue": 125,
+    "lowestValue": 80
+  }
+]
