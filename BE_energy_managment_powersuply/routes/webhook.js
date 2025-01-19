@@ -39,7 +39,7 @@ router.get('/read', function (req, res, next) {
         fs.writeFileSync(DATA_FILE, JSON.stringify([]));
     }
     console.log("read")
-    res.status(200).json(DATA_FILE);
+    res.status(200).json(JSON.parse(fs.readFileSync(DATA_FILE, 'utf8')));
 });
 
 /* POST webhook endpoint. */

@@ -1,0 +1,54 @@
+.displayCard{
+    background-color:#212121;
+    border-radius: 10px;
+    color: #6b6b6b;
+    height: 240px;
+    margin-right: 50px;
+    margin-left: 5px;
+}
+.circle {
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    border: 10px solid #E5E619;
+}
+.displayCardHeader{
+    margin-left: 5px;
+}
+.displayCardHeader .title-label{
+    font-size: 30px;
+    font-family: "Tilt Warp", sans-serif;
+    color: #6b6b6b;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+.displayCardHeader .title{
+    color: #E5E619;
+    font-size: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+.currenPowerContainer{
+    margin-left: 50px;
+}
+.currenPower{
+    color: #E5E619;
+    margin-top: 15px;
+    padding: 50px;
+    font-size: 50px;
+}
+.currenPowerLabel{
+    color: #E5E619;
+    font-size: 20px;
+}
+.lowandHighestContainer p{
+    font-size: 40px;
+    font-family: "Tilt Warp", sans-serif;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-right: 20px;
+    margin-left: 5px;
+}

@@ -1,38 +1,40 @@
 .App {
-  text-align: center;
+   background-color: #121212;
+
+}
+.App h1 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 128px;
+    color: #E5E619;
+    letter-spacing: -2px;
+}
+.savedDevices{
+    border-bottom: solid 1px #E5E619;
+    opacity: 89%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.savedDevices Button{
+    margin-right: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.savedDevices p{
+    margin-left: 50px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-family: "Tilt Warp", sans-serif;
+    color: #E5E619;
+    text-transform: uppercase;
+    letter-spacing: -2px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.savedDevicesContainer{
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addButton{
+    height: 40px;
+/*color: #E5E619!important;
+background-color:  #121212!important;
+border: #E5E619 2px solid!important;
+*/
 }
