@@ -34,7 +34,7 @@ const PowerOverview = ({allDevices, handleClickOpen}) => {
                 <p className="currenPowerLabel">Current Power</p>
             </div>
             {currentDevices !== null ?
-                <div className="displayCard d-flex flex-column w-75">
+                <div className="displayCardOV d-flex flex-column w-75">
                     <div className="displayCardHeader d-flex flex-column m-0">
                         <p className="title-label">Current Device</p>
                         <p className="title">{currentDevices.label}</p>
@@ -45,7 +45,7 @@ const PowerOverview = ({allDevices, handleClickOpen}) => {
                     </div>
                 </div>
                 :
-                <div className="displayCard d-flex flex-column align-items-center justify-content-center w-75">
+                <div className="displayCardOV d-flex flex-column align-items-center justify-content-center w-75">
                     <p className="noDeviceDetected"> We could not detect the Device</p>
                     <Button className="addButton" variant={"outlined"} onClick={handleClickOpen}>ADD Device</Button>
                 </div>

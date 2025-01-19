@@ -16,5 +16,11 @@
     "timestamp": "2025-01-16T15:40:11.069Z",
     "topic": "powersuply",
     "payload": "50"
+  },
+  {
+    "id": "8da5e0d0-31bb-426d-959c-ad68d6eb76b5",
+    "timestamp": "2025-01-19T11:14:21.210Z",
+    "topic": "powersuply",
+    "payload": "130"
   }
 ]
