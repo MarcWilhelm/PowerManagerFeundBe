@@ -52,3 +52,8 @@
     margin-right: 20px;
     margin-left: 5px;
 }
+.noDeviceDetected{
+    font-size: 40px;
+    font-family: "Tilt Warp", sans-serif;
+    color: #6b6b6b;
+}

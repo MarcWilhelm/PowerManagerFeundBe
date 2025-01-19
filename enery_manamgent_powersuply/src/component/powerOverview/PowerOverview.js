@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import "./PowerOverview.css"
 import {forEach} from "react-bootstrap/ElementChildren";
+import {Button} from "@mui/material";
 
-const PowerOverview = ({allDevices}) => {
+const PowerOverview = ({allDevices, handleClickOpen}) => {
     const [currentPower, setCurrentPower] = useState(0)
     const [currentDevices, setCurrentDevice] = useState([])
 
@@ -13,16 +14,14 @@ const PowerOverview = ({allDevices}) => {
         }).then(response => response.json())
             .then(data => setCurrentPower(data))
             .catch(error => console.error('Error:', error));
-
-
     }, []);
 
     useEffect(() => {
-
         allDevices.map((device) => {
             if (device.HighesValue >= currentPower.payload && device.lowestValue <= currentPower.payload) {
                 setCurrentDevice(device);
             }
+            else setCurrentDevice(null);
         })
     }, [currentPower, allDevices]);
 
@@ -34,17 +33,23 @@ const PowerOverview = ({allDevices}) => {
                 </div>
                 <p className="currenPowerLabel">Current Power</p>
             </div>
-            <div className="displayCard d-flex flex-column w-75">
-                <div className="displayCardHeader d-flex flex-column m-0">
-                    <p className="title-label">Current Device</p>
-                    <p className="title">{currentDevices.label}</p>
+            {currentDevices !== null ?
+                <div className="displayCard d-flex flex-column w-75">
+                    <div className="displayCardHeader d-flex flex-column m-0">
+                        <p className="title-label">Current Device</p>
+                        <p className="title">{currentDevices.label}</p>
+                    </div>
+                    <div className="lowandHighestContainer d-flex flex-row">
+                        <p>Max: {currentDevices.HighesValue}W</p>
+                        <p>LOW: {currentDevices.LowestValue}W</p>
+                    </div>
                 </div>
-                <div className="lowandHighestContainer d-flex flex-row">
-                    <p>Max: {currentDevices.HighesValue}W</p>
-                    <p>LOW: {currentDevices.LowestValue}W</p>
+                :
+                <div className="displayCard d-flex flex-column align-items-center justify-content-center w-75">
+                    <p className="noDeviceDetected"> We could not detect the Device</p>
+                    <Button className="addButton" variant={"outlined"} onClick={handleClickOpen}>ADD Device</Button>
                 </div>
-                <img/>
-            </div>
+            }
         </div>
     );
 };

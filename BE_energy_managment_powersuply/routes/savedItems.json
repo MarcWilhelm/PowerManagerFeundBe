@@ -1,62 +1,17 @@
 [
   {
-    "label": "Marc Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "label": "Marc Smartphone",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "label": "Livio's Laptop",
-    "HighesValue": 125,
-    "lowestValue": 40
-  },
-  {
-    "label": "Marc Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "label": "Marc Smartphone",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "label": "Livio's Laptop",
-    "HighesValue": 125,
-    "lowestValue": 40
-  },
-  {
-    "label": "Marc Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "label": "Marc Smartphone",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "label": "Livio's Laptop",
-    "HighesValue": 125,
-    "lowestValue": 40
-  },
-  {
     "id": "cb27393a-ed85-437c-88f9-0e7161d6519f",
     "timestamp": "2025-01-18T17:12:24.432Z",
-    "label": "Livio Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
+    "label": "Livio OLIVIA Laptop",
+    "HighesValue": "127",
+    "lowestValue": "82"
   },
   {
     "id": "cdf4850b-e17c-4bfc-bb96-476417f509e9",
     "timestamp": "2025-01-18T17:12:35.572Z",
-    "label": "Livio Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
+    "label": "Livio Laptop Test 2",
+    "HighesValue": "110",
+    "lowestValue": "80"
   },
   {
     "id": "b5d19b99-9a1c-4d55-89eb-fd65c8dc4049",
@@ -73,17 +28,10 @@
     "lowestValue": 80
   },
   {
-    "id": "b9f1ac32-99a3-4250-9eb8-e5bf520dc953",
-    "timestamp": "2025-01-19T10:24:42.233Z",
-    "label": "Livio Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
-  },
-  {
-    "id": "3bff7dff-16ca-49bf-84d3-2da9b1774da7",
-    "timestamp": "2025-01-19T10:25:44.135Z",
-    "label": "Livio Laptop",
-    "HighesValue": 125,
-    "lowestValue": 80
+    "id": "093ce1fb-eda5-487d-a5cb-d0fe281f8b5b",
+    "timestamp": "2025-01-19T10:55:14.605Z",
+    "label": "Test Device Numb 1",
+    "HighesValue": "60",
+    "lowestValue": "40"
   }
 ]

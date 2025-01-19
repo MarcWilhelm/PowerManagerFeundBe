@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField} from "@mui/material";
 
-const AddDialog = ({handleClose}) => {
+const AddDialog = ({handleClose, device}) => {
 
 
 
@@ -19,6 +19,7 @@ const AddDialog = ({handleClose}) => {
                     id="name"
                     name="deviceName"
                     label="Device Name"
+                    defaultValue={device?.label}
                     type="text"
                     fullWidth
                     variant="standard"
@@ -32,7 +33,7 @@ const AddDialog = ({handleClose}) => {
                         name="maxValue"
                         label="Max Value"
                         type="number"
-
+                        defaultValue={parseInt(device?.HighesValue)}
                         variant="standard"
                     />
                     <TextField
@@ -42,7 +43,7 @@ const AddDialog = ({handleClose}) => {
                         name="lowValue"
                         label="Lowest Value"
                         type="number"
-
+                        defaultValue={parseInt(device?.lowestValue)}
                         variant="standard"
                     />
                 </div>
@@ -50,7 +51,7 @@ const AddDialog = ({handleClose}) => {
             </DialogContent>
             <DialogActions>
                 <Button onClick={handleClose}>Cancel</Button>
-                <Button type={"submit"}  variant="contained">ADD</Button>
+                <Button type={"submit"}  variant="contained">{device ? "Update" : "Add"}</Button>
             </DialogActions>
         </>
     );

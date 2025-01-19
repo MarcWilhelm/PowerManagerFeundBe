@@ -31,7 +31,7 @@ function App() {
     return (
         <div className="App">
             <h1>Power Manager</h1>
-            <PowerOverview allDevices={allDevices}/>
+            <PowerOverview allDevices={allDevices} handleClickOpen={handleClickOpen}/>
             <div className="savedDevices d-flex justify-content-between align-items-center align-content-center w-100">
                 <p>Saved Devices</p>
                 <Button className="addButton" variant={"outlined"} onClick={handleClickOpen}>ADD Device</Button>
